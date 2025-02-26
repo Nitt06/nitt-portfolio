@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="start.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/7d93988530e8323fc850d8d740951ca0?family=Sloop-ScriptOne" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+</head>
+<body>
+    <section class="first-page">
+        <header>
+            <a href="#start" class="logo">NG</a>
+            <nav class="navbar">
+                <ul style="list-style: none;">
+                    
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="start" class="active">
+                <div class="name">
+                    <h1>NITESH, <span>Gupta</span></h1>
+                </div>
+                <h3>Web Designer <br>& Developer</h3>
+            </section>
+
+            <section id="about" class="about">
+                <h1 >ABOUT ME</h1>
+                <div class="about-me">
+                    <div class="abouthead">
+                    
+                    </div>
+                    <p> A first-year Computer Science and Engineering student at <a href="https://adamasuniversity.ac.in/" >Adamas University</a> with a strong interest in web development. I’m passionate about creating functional,  user-friendly websites and constantly exploring new technologies to enhance my skills.As a dedicated learner, I’m excited to contribute to innovative projects and grow as a developer.</p>
+                </div>
+            </section>
+
+            <section id="education" class="education">
+                 <div class="heading">Education section content</div> 
+            </section>
+
+            <section id="projects" class="projects">
+                <div class="projecthead">
+                Projects section content
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <div class="contacthead">
+                Contact section content
+                </div>
+            </section>
+
+        </main>
+    </section>
+</body>
+</html>
